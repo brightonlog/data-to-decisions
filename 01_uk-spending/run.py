@@ -3,7 +3,8 @@
 - 결과는 markdown 표로 출력 → 노션·README에 바로 붙임.
 """
 import sys, duckdb
-
+stmts = [s for s in stmts if re.sub(r"--.*", "", s).strip()]
+# drop chunks that are only comments / 주석만 남은 조각 제거
 sql_path = sys.argv[1]
 ed = sys.argv[2] if len(sys.argv) > 2 else "291026"
 con = duckdb.connect(f"data/{ed}/ons_{ed}.duckdb")
