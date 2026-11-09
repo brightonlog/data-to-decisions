@@ -1,0 +1,76 @@
+age_group,code,item,households_k,weekly_gbp
+under_30,1,Food & non-alcoholic drinks,2330.0,53.1
+under_30,2,"Alcoholic drinks, tobacco & narcotics",2330.0,4.4
+under_30,3,Clothing & footwear,2330.0,13.7
+under_30,4,"Housing(net)³, fuel & power",2330.0,193.0
+under_30,5,Household goods & services,2330.0,28.5
+under_30,6,Health,2330.0,4.0
+under_30,7,Transport,2330.0,72.3
+under_30,8,Communication,2330.0,19.2
+under_30,9,Recreation & culture,2330.0,47.4
+under_30,10,Education,2330.0,11.1
+under_30,11,Restaurants & hotels,2330.0,43.4
+under_30,12,Miscellaneous goods & services,2330.0,36.1
+under_30,1-12,All expenditure groups,2330.0,526.2
+under_30,13,Other expenditure items,2330.0,71.6
+under_30,1-13,Total expenditure,2330.0,597.8
+30_49,1,Food & non-alcoholic drinks,9810.0,75.2
+30_49,2,"Alcoholic drinks, tobacco & narcotics",9810.0,9.8
+30_49,3,Clothing & footwear,9810.0,20.9
+30_49,4,"Housing(net)³, fuel & power",9810.0,131.6
+30_49,5,Household goods & services,9810.0,39.6
+30_49,6,Health,9810.0,7.4
+30_49,7,Transport,9810.0,94.3
+30_49,8,Communication,9810.0,22.8
+30_49,9,Recreation & culture,9810.0,72.6
+30_49,10,Education,9810.0,8.3
+30_49,11,Restaurants & hotels,9810.0,47.5
+30_49,12,Miscellaneous goods & services,9810.0,47.5
+30_49,1-12,All expenditure groups,9810.0,577.4
+30_49,13,Other expenditure items,9810.0,104.9
+30_49,1-13,Total expenditure,9810.0,682.3
+50_64,1,Food & non-alcoholic drinks,8240.0,75.1
+50_64,2,"Alcoholic drinks, tobacco & narcotics",8240.0,14.4
+50_64,3,Clothing & footwear,8240.0,20.1
+50_64,4,"Housing(net)³, fuel & power",8240.0,103.5
+50_64,5,Household goods & services,8240.0,42.6
+50_64,6,Health,8240.0,10.7
+50_64,7,Transport,8240.0,110.4
+50_64,8,Communication,8240.0,24.0
+50_64,9,Recreation & culture,8240.0,87.2
+50_64,10,Education,8240.0,7.8
+50_64,11,Restaurants & hotels,8240.0,51.3
+50_64,12,Miscellaneous goods & services,8240.0,49.4
+50_64,1-12,All expenditure groups,8240.0,596.6
+50_64,13,Other expenditure items,8240.0,91.0
+50_64,1-13,Total expenditure,8240.0,687.7
+65_74,1,Food & non-alcoholic drinks,4280.0,63.7
+65_74,2,"Alcoholic drinks, tobacco & narcotics",4280.0,13.3
+65_74,3,Clothing & footwear,4280.0,13.7
+65_74,4,"Housing(net)³, fuel & power",4280.0,80.9
+65_74,5,Household goods & services,4280.0,37.3
+65_74,6,Health,4280.0,12.0
+65_74,7,Transport,4280.0,76.6
+65_74,8,Communication,4280.0,20.3
+65_74,9,Recreation & culture,4280.0,80.8
+65_74,10,Education,4280.0,1.3
+65_74,11,Restaurants & hotels,4280.0,42.5
+65_74,12,Miscellaneous goods & services,4280.0,41.3
+65_74,1-12,All expenditure groups,4280.0,483.4
+65_74,13,Other expenditure items,4280.0,63.7
+65_74,1-13,Total expenditure,4280.0,547.1
+75_plus,1,Food & non-alcoholic drinks,4170.0,58.2
+75_plus,2,"Alcoholic drinks, tobacco & narcotics",4170.0,8.7
+75_plus,3,Clothing & footwear,4170.0,9.7
+75_plus,4,"Housing(net)³, fuel & power",4170.0,72.8
+75_plus,5,Household goods & services,4170.0,32.9
+75_plus,6,Health,4170.0,12.4
+75_plus,7,Transport,4170.0,49.0
+75_plus,8,Communication,4170.0,17.2
+75_plus,9,Recreation & culture,4170.0,55.1
+75_plus,10,Education,4170.0,1.3
+75_plus,11,Restaurants & hotels,4170.0,28.0
+75_plus,12,Miscellaneous goods & services,4170.0,40.8
+75_plus,1-12,All expenditure groups,4170.0,386.0
+75_plus,13,Other expenditure items,4170.0,58.2
+75_plus,1-13,Total expenditure,4170.0,444.3

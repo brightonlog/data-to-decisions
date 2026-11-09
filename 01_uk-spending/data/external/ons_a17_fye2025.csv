@@ -1,0 +1,166 @@
+code,item,hrp_group,households_k,weekly_gbp
+1,Food & non-alcoholic drinks,ft_employee,12360.0,79.9
+1,Food & non-alcoholic drinks,pt_employee,3000.0,73.3
+1,Food & non-alcoholic drinks,all_employees,15360.0,78.6
+1,Food & non-alcoholic drinks,self_employed,2380.0,86.9
+1,Food & non-alcoholic drinks,all_in_employment,17740.0,79.7
+1,Food & non-alcoholic drinks,unemployed,520.0,65.9
+1,Food & non-alcoholic drinks,all_econ_active,18270.0,79.3
+1,Food & non-alcoholic drinks,retired,7050.0,62.0
+1,Food & non-alcoholic drinks,other_inactive,3390.0,67.6
+1,Food & non-alcoholic drinks,all_econ_inactive,10440.0,63.8
+1,Food & non-alcoholic drinks,all_households,28710.0,73.7
+2,"Alcoholic drinks, tobacco & narcotics",ft_employee,12360.0,11.4
+2,"Alcoholic drinks, tobacco & narcotics",pt_employee,3000.0,10.4
+2,"Alcoholic drinks, tobacco & narcotics",all_employees,15360.0,11.2
+2,"Alcoholic drinks, tobacco & narcotics",self_employed,2380.0,11.0
+2,"Alcoholic drinks, tobacco & narcotics",all_in_employment,17740.0,11.1
+2,"Alcoholic drinks, tobacco & narcotics",unemployed,520.0,4.7
+2,"Alcoholic drinks, tobacco & narcotics",all_econ_active,18270.0,11.0
+2,"Alcoholic drinks, tobacco & narcotics",retired,7050.0,10.9
+2,"Alcoholic drinks, tobacco & narcotics",other_inactive,3390.0,13.9
+2,"Alcoholic drinks, tobacco & narcotics",all_econ_inactive,10440.0,11.9
+2,"Alcoholic drinks, tobacco & narcotics",all_households,28710.0,11.3
+3,Clothing & footwear,ft_employee,12360.0,21.8
+3,Clothing & footwear,pt_employee,3000.0,18.1
+3,Clothing & footwear,all_employees,15360.0,21.1
+3,Clothing & footwear,self_employed,2380.0,20.6
+3,Clothing & footwear,all_in_employment,17740.0,21.0
+3,Clothing & footwear,unemployed,520.0,12.5
+3,Clothing & footwear,all_econ_active,18270.0,20.8
+3,Clothing & footwear,retired,7050.0,11.9
+3,Clothing & footwear,other_inactive,3390.0,15.8
+3,Clothing & footwear,all_econ_inactive,10440.0,13.2
+3,Clothing & footwear,all_households,28710.0,18.0
+4,"Housing (net)², fuel & power",ft_employee,12360.0,136.2
+4,"Housing (net)², fuel & power",pt_employee,3000.0,123.4
+4,"Housing (net)², fuel & power",all_employees,15360.0,133.7
+4,"Housing (net)², fuel & power",self_employed,2380.0,132.3
+4,"Housing (net)², fuel & power",all_in_employment,17740.0,133.5
+4,"Housing (net)², fuel & power",unemployed,520.0,157.2
+4,"Housing (net)², fuel & power",all_econ_active,18270.0,134.2
+4,"Housing (net)², fuel & power",retired,7050.0,75.8
+4,"Housing (net)², fuel & power",other_inactive,3390.0,122.1
+4,"Housing (net)², fuel & power",all_econ_inactive,10440.0,90.8
+4,"Housing (net)², fuel & power",all_households,28710.0,118.4
+5,Household goods & services,ft_employee,12360.0,47.9
+5,Household goods & services,pt_employee,3000.0,39.7
+5,Household goods & services,all_employees,15360.0,46.3
+5,Household goods & services,self_employed,2380.0,46.1
+5,Household goods & services,all_in_employment,17740.0,46.3
+5,Household goods & services,unemployed,520.0,22.7
+5,Household goods & services,all_econ_active,18270.0,45.6
+5,Household goods & services,retired,7050.0,33.5
+5,Household goods & services,other_inactive,3390.0,28.2
+5,Household goods & services,all_econ_inactive,10440.0,31.8
+5,Household goods & services,all_households,28710.0,40.6
+6,Health,ft_employee,12360.0,
+6,Health,pt_employee,3000.0,
+6,Health,all_employees,15360.0,
+6,Health,self_employed,2380.0,
+6,Health,all_in_employment,17740.0,
+6,Health,unemployed,520.0,
+6,Health,all_econ_active,18270.0,
+6,Health,retired,7050.0,
+6,Health,other_inactive,3390.0,
+6,Health,all_econ_inactive,10440.0,
+6,Health,all_households,28710.0,11.9
+7,Transport,ft_employee,12360.0,121.2
+7,Transport,pt_employee,3000.0,85.1
+7,Transport,all_employees,15360.0,114.1
+7,Transport,self_employed,2380.0,138.3
+7,Transport,all_in_employment,17740.0,117.4
+7,Transport,unemployed,520.0,37.0
+7,Transport,all_econ_active,18270.0,115.1
+7,Transport,retired,7050.0,64.5
+7,Transport,other_inactive,3390.0,62.5
+7,Transport,all_econ_inactive,10440.0,63.8
+7,Transport,all_households,28710.0,96.4
+8,Communication,ft_employee,12360.0,25.2
+8,Communication,pt_employee,3000.0,21.7
+8,Communication,all_employees,15360.0,24.5
+8,Communication,self_employed,2380.0,24.5
+8,Communication,all_in_employment,17740.0,24.5
+8,Communication,unemployed,520.0,18.6
+8,Communication,all_econ_active,18270.0,24.3
+8,Communication,retired,7050.0,18.6
+8,Communication,other_inactive,3390.0,19.8
+8,Communication,all_econ_inactive,10440.0,19.0
+8,Communication,all_households,28710.0,22.4
+9,Recreation & culture,ft_employee,12360.0,93.6
+9,Recreation & culture,pt_employee,3000.0,85.1
+9,Recreation & culture,all_employees,15360.0,91.9
+9,Recreation & culture,self_employed,2380.0,87.2
+9,Recreation & culture,all_in_employment,17740.0,91.3
+9,Recreation & culture,unemployed,520.0,40.7
+9,Recreation & culture,all_econ_active,18270.0,89.8
+9,Recreation & culture,retired,7050.0,72.6
+9,Recreation & culture,other_inactive,3390.0,60.2
+9,Recreation & culture,all_econ_inactive,10440.0,68.6
+9,Recreation & culture,all_households,28710.0,82.1
+10,Education,ft_employee,12360.0,
+10,Education,pt_employee,3000.0,
+10,Education,all_employees,15360.0,
+10,Education,self_employed,2380.0,
+10,Education,all_in_employment,17740.0,
+10,Education,unemployed,520.0,
+10,Education,all_econ_active,18270.0,
+10,Education,retired,7050.0,
+10,Education,other_inactive,3390.0,
+10,Education,all_econ_inactive,10440.0,
+10,Education,all_households,28710.0,8.7
+11,Restaurants & hotels,ft_employee,12360.0,59.2
+11,Restaurants & hotels,pt_employee,3000.0,48.6
+11,Restaurants & hotels,all_employees,15360.0,57.1
+11,Restaurants & hotels,self_employed,2380.0,63.4
+11,Restaurants & hotels,all_in_employment,17740.0,57.9
+11,Restaurants & hotels,unemployed,520.0,23.0
+11,Restaurants & hotels,all_econ_active,18270.0,56.9
+11,Restaurants & hotels,retired,7050.0,35.5
+11,Restaurants & hotels,other_inactive,3390.0,36.1
+11,Restaurants & hotels,all_econ_inactive,10440.0,35.7
+11,Restaurants & hotels,all_households,28710.0,49.2
+12,Miscellaneous goods & services,ft_employee,12360.0,56.4
+12,Miscellaneous goods & services,pt_employee,3000.0,45.2
+12,Miscellaneous goods & services,all_employees,15360.0,54.2
+12,Miscellaneous goods & services,self_employed,2380.0,58.3
+12,Miscellaneous goods & services,all_in_employment,17740.0,54.8
+12,Miscellaneous goods & services,unemployed,520.0,27.4
+12,Miscellaneous goods & services,all_econ_active,18270.0,54.0
+12,Miscellaneous goods & services,retired,7050.0,45.3
+12,Miscellaneous goods & services,other_inactive,3390.0,36.8
+12,Miscellaneous goods & services,all_econ_inactive,10440.0,42.5
+12,Miscellaneous goods & services,all_households,28710.0,49.8
+1-12,All expenditure groups,ft_employee,12360.0,674.3
+1-12,All expenditure groups,pt_employee,3000.0,573.8
+1-12,All expenditure groups,all_employees,15360.0,654.7
+1-12,All expenditure groups,self_employed,2380.0,697.2
+1-12,All expenditure groups,all_in_employment,17740.0,660.4
+1-12,All expenditure groups,unemployed,520.0,421.9
+1-12,All expenditure groups,all_econ_active,18270.0,653.5
+1-12,All expenditure groups,retired,7050.0,446.9
+1-12,All expenditure groups,other_inactive,3390.0,481.7
+1-12,All expenditure groups,all_econ_inactive,10440.0,458.2
+1-12,All expenditure groups,all_households,28710.0,582.5
+13,Other expenditure items,ft_employee,12360.0,125.8
+13,Other expenditure items,pt_employee,3000.0,88.8
+13,Other expenditure items,all_employees,15360.0,118.5
+13,Other expenditure items,self_employed,2380.0,111.9
+13,Other expenditure items,all_in_employment,17740.0,117.6
+13,Other expenditure items,unemployed,520.0,72.3
+13,Other expenditure items,all_econ_active,18270.0,116.3
+13,Other expenditure items,retired,7050.0,60.4
+13,Other expenditure items,other_inactive,3390.0,44.5
+13,Other expenditure items,all_econ_inactive,10440.0,55.3
+13,Other expenditure items,all_households,28710.0,94.1
+1-13,Total expenditure,ft_employee,12360.0,800.1
+1-13,Total expenditure,pt_employee,3000.0,662.6
+1-13,Total expenditure,all_employees,15360.0,773.2
+1-13,Total expenditure,self_employed,2380.0,809.1
+1-13,Total expenditure,all_in_employment,17740.0,778.0
+1-13,Total expenditure,unemployed,520.0,494.2
+1-13,Total expenditure,all_econ_active,18270.0,769.9
+1-13,Total expenditure,retired,7050.0,507.3
+1-13,Total expenditure,other_inactive,3390.0,526.3
+1-13,Total expenditure,all_econ_inactive,10440.0,513.4
+1-13,Total expenditure,all_households,28710.0,676.6
