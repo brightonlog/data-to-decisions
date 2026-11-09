@@ -69,3 +69,23 @@ Revolut already has a Subscriptions feature for tracking and blocking recurring 
 Q3 reverses the starting assumption. The segment adding spend fastest is not 18-34 but 55+. Growth alone, however, does not justify a feature bet: a segment can grwo quickly from a small base. The next question is therefore size —— how much the 55+ segment spends in absolute terms. This dataset is a per-account index and cannot answer that, so I turn to ONS household expenditure by age.
 
 Decision rule, set before looking at the data: I will target the segment with the highest growth, provided it accounts for at least 25% of UK household spending. Below that threshold, I switch to the largest segment that still grows above the overall rate.
+
+
+
+### Q4 · How big is the 55+ segment in £?
+Query: [`sql/q4_age_size.sql`](sql/q4_age_size.sql) · Data: ONS Family Spending FYE2023-25, Tables A12-A16 (`data/external/`)
+
+![Q4](charts/q4_age_size.png)
+
+**55+ is a large segment, not a niche.** Households headed by someone aged 50-64 spend the most per week (£688). Households headed by someone aged 30-49 are the largest group in total (£6.7bn a week, 37%). Add up every household headed by someone aged 50 or over and they make up 55% of UK weekly spending.
+
+ONS splits age at 50 and 65, not at 55. So I can only give a range for 55+: 23% if I count 65+ only, 55% if I count everyone 50+, and about 44% if I assume 55-64 is two-thirds of the 50-64 group. The lowest figure is close to the 25% bar I set before running the query. The middle figure clears it easily.
+
+The last time Revolut published its UK customer mix was July 2022: 11% of 4.8m UK customers were 55+. The UK base has since grown to 13m, with no newer split. Even against the lowest market figure (23%), 55+ was under-represented at Revolut by about half. That means two opportunities at once: the 55+ customers already on Revolut are growing their spend fastest (Q3), and most 55+ spenders in the UK are not on Revolut yet.
+
+Two caveats on this comparison. First, the two datasets count different things: ONS counts UK households, the Revolut index counts Revolut accounts. So I use ONS only to answer "how big is the market" and the Revolut data only to answer "how fast is it growing" — I never multiply one by the other. Second, both numbers are dated: the ONS figure is a 2023-25 average and the Revolut 11% is from 2022. An up-to-date 55+ share of Revolut's UK base would be needed to confirm the gap; I list it as the first data gap in section 7.
+
+## What the four findings say together
+Customers are spending more each year, and the extra money is going to recurring, at-home payments rather than eating out or travel (Q1, Q2). Older customers are driving this most: 55+ accounts grew 33% in two years, against 18% overall (Q3). That segment is large — at least a quarter of UK household spending — and was under-represented at Revolut the last time the mix was published (Q4).
+
+So the segment is 55+. Whether 55+ customers are also the ones adding recurring spend fastest is a hypothesis, not a fact: this dataset has no age × category split. Revolut already has a Subscriptions feature for recurring payments. Whether that feature reaches the 55+ segment is the question for the next section.
