@@ -66,4 +66,6 @@ This rejects the assumption that younger customers drive the growth. Two things 
 Customers are spending more each year, and the increase is going to recurring, at-home payments rather than to eating out or travelling. The shift is strongest among older customers. 
 Revolut already has a Subscriptions feature for tracking and blocking recurring payments; whether it is built for a customer base that is adding recurring spend — and reaching the 55+ segment that is adding it fastest —— is the question for the next section.
 
-So the segment is not "young"; it is 55+, the group adding spend fastest. Whether they are also the group adding recurring spend fastest is a hypotehsis I carry into the next section, not a fact. 
+Q3 reverses the starting assumption. The segment adding spend fastest is not 18-34 but 55+. Growth alone, however, does not justify a feature bet: a segment can grwo quickly from a small base. The next question is therefore size —— how much the 55+ segment spends in absolute terms. This dataset is a per-account index and cannot answer that, so I turn to ONS household expenditure by age.
+
+Decision rule, set before looking at the data: I will target the segment with the highest growth, provided it accounts for at least 25% of UK household spending. Below that threshold, I switch to the largest segment that still grows above the overall rate.
