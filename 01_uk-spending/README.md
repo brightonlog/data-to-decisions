@@ -177,6 +177,23 @@ flowchart LR
     G --> H[Shown in Subscriptions]
     B & C & D & E & G --> L[(Event log)]
 ```
+## 5. Ship
+
+I would not turn this on for all customers at once. If something goes wrong with Direct Debits, a customer can miss a bill. So I use two things together: an A/B test and a staged rollout.
+
+**A/B test.** Customers whose account is at Revolut Bank UK are split into two groups at random. One group sees the card (treatment) and the other does not (control), so I can compare the two. Customers of all ages are included, and I read the results by age band.
+
+**Staged rollout.** The feature is turned on in steps: staff accounts first, then 1% of customers, then 10%, then 50%. At each step, the customers in that step are split into the two groups of the A/B test. I move to the next step only if the guardrails are not crossed. If any guardrail is crossed, the feature is turned off. The guardrails are the ones in section 2, plus the number of failed Direct Debits that I added in section 4. The percentages are common values that I chose. The exact percentages would follow Revolut's own rollout rules.
+
+In section 2 I planned to read the main result at week 8. I change this to week 12. A partial switch can take up to about four weeks, so at week 8 some customers would not have made a single payment from Revolut yet.
+
+| Item | Plan |
+|---|---|
+| Who | Customers whose account is at Revolut Bank UK |
+| A/B test | Random, half see the card and half do not |
+| Staged rollout | Staff, 1%, 10%, 50% |
+| First check | Week 4: how many customers start and how many payments fail |
+| Main result | Week 12: recurring payments per 55+ account, compared with the control group |
 
 ## Sources
 - ONS, Revolut spending on debit cards, edition 29 Oct 2026
