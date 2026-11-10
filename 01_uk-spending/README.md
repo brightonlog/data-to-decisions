@@ -124,8 +124,59 @@ One thing I have not tested: I assume older customers kept their bills at anothe
 
 Because the direction changed, the metric in section 2now includes Direct Debits as well as card payments.
 
+## 4. Spec
 
+Bills Switch is shown to customers whose account has moved to Revolut Bank UK. It appears once, on the home screen. Before the move the account has no deposit protection, so the message would not be true.
 
+Some customers have already been moved to the bank, and others will be moved later. For customers who are moved later, the card appears right after the move. For customers who were moved before this feature exists, the card appears the first time they open the app after launch. I do not know how many customers are in each group. I list this in section 7.
+
+The customer goes through these steps:
+
+1. A card appears on the home screen: "Your money is now protected up to £120,000. Do you want to move a bill here?" The customer taps it.
+2. The customer enters the details of their other bank account.
+3. Revolut asks the other bank for the list of Direct Debits. This is not instant. When the list arrives, the customer gets a notification.
+4. The customer chooses which ones to move. They can choose only one.
+5. The app shows a confirmation: the other account stays open, and only the chosen payments move. It also shows the date the move will finish. The customer approves.
+6. The chosen payments start to leave from Revolut. They appear in Subscriptions, and the customer gets an alert before each payment.
+
+I let the customer move only one bill because it is a small step. Most 55+ customers have used their main bank for a long time, and I do not think they will move everything at once. If one bill works well, they may move more later.
+
+This uses the partial switch of the UK Current Account Switch Service. It lets a customer choose which payments to move and keep the old account open. It has three limits. It is slow: banks quote from a few working days to about four weeks. It is not covered by the Current Account Switch Guarantee. And it depends on the billing company updating the account details, so a payment can fail. Because of this, I add one guardrail to section 2: the number of failed Direct Debits in the 60 days after a switch. I expect step 3 to lose the most customers, because they have to wait and come back.
+
+The first version does not include the following.
+
+- Showing the card only to 55+ customers. Customers of all ages see it, so that I can compare how each age group responds. This was the test design in section 2.
+- Asking the customer to move their salary or to close their old account. These are much bigger requests than moving one bill, and I want the first step to be small.
+- A new alert for recurring payments. Subscriptions already sends one.
+- Asking the customer to move a second bill after the first. I want to see if the first move works before asking for more.
+- Paying a bill for the customer if a moved Direct Debit fails. This would protect the customer, but it has a cost and needs legal review. I first measure how often payments fail.
+
+To measure the feature later, the app records an event at each step.
+
+| Event | When it is recorded |
+|---|---|
+| `switch_card_shown` | The card appears on the home screen |
+| `switch_started` | The customer taps the card |
+| `bank_details_entered` | The customer enters their other bank account |
+| `payment_list_received` | The list of Direct Debits arrives from the other bank |
+| `payments_chosen` | The customer chooses which payments to move and approves |
+| `switch_completed` | The chosen payments start to leave from Revolut |
+| `direct_debit_failed` | A moved payment fails |
+| `direct_debit_active_30d` | A moved payment is still on Revolut after 30 days |
+
+Each event also records the customer's age band and whether they are in the group that sees the card or the group that does not.
+
+```mermaid
+flowchart LR
+    A[Account is at Revolut Bank UK] --> B[Card shown]
+    B --> C[Customer enters other bank details]
+    C --> D[Revolut requests list of Direct Debits]
+    D --> E[Customer chooses payments]
+    E --> F[Partial switch]
+    F --> G[Payments leave from Revolut]
+    G --> H[Shown in Subscriptions]
+    B & C & D & E & G --> L[(Event log)]
+```
 
 ## Sources
 - ONS, Revolut spending on debit cards, edition 29 Oct 2026
@@ -136,3 +187,4 @@ Because the direction changed, the metric in section 2now includes Direct Debits
 - Revolut, "Revolut Launches UK Bank", 11 Mar 2026
 - Finder, Revolut statistics (average monthly deposit, 2023)
 - Fintech press coverage of Revolut's 55-74 user data, May 2022
+
