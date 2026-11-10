@@ -195,6 +195,39 @@ In section 2 I planned to read the main result at week 8. I change this to week 
 | First check | Week 4: how many customers start and how many payments fail |
 | Main result | Week 12: recurring payments per 55+ account, compared with the control group |
 
+## 6. Measure
+
+### How big could it be
+
+I cannot know the result before the test. I can only make assumptions and multiply them.
+
+- 55+ accounts in the UK: about 1.43 million. This is 13 million UK customers × 11%, the share of 55+ customers that Revolut published in 2022. The share may be different now.
+- Bills moved per customer: 1, because the first version asks for one bill (section 4).
+- Share of 55+ customers who move a bill: 1%, 2% or 4%.
+
+For the last number I looked for real figures. In the UK about 1.15 million current accounts were switched in the 12 months to March 2026, which is about 2% of account holders a year. In a KPMG survey, 4% of people aged 65 and over said they had switched a bank account in the past year, the lowest of any age group. So I use 2% as the base case, 4% as the high case and 1% as the low case.
+
+These figures are not the same thing as my feature. They count people who switched a bank in a year. My feature asks a customer once to move one bill. I use them only as a starting point, and I will replace them with the result at week 4.
+
+| Case | Share who move a bill | 55+ accounts | Extra recurring payments a month |
+|---|---|---|---|
+| Low | 1% | 14,000 | 14,000 |
+| Base | 2% | 29,000 | 29,000 |
+| High | 4% | 57,000 | 57,000 |
+
+I do not estimate revenue. I found no public figure for the value of one Direct Debit to a bank.
+
+### What I measure after launch
+
+| Type | What I look at | Why |
+|---|---|---|
+| North Star Metric | Recurring payments per 55+ account each month, card and Direct Debit together. Treatment group compared with control group at week 12. | This is the goal of the feature. |
+| Funnel | Of the customers who see the card, how many tap it, enter their bank details, choose a payment, and finish the switch. Read by age band. | It shows at which step customers stop, so I know what to fix. |
+| Retention cohort | Of the payments that were moved, how many are still on Revolut after 30, 60 and 90 days. Customers are grouped by the week they switched. | A payment that moves back does not help. |
+| Guardrails | Notification opt-outs, uninstalls, support tickets, and failed Direct Debits. Treatment group compared with control group every day. | If these get worse, the feature is turned off. |
+
+The funnel uses the events from section 4. I expect the largest drop between entering the bank details and choosing a payment, because the customer has to wait for the list and come back.
+
 ## Sources
 - ONS, Revolut spending on debit cards, edition 29 Oct 2026
 - ONS, Family spending in the UK: April 2024 to March 2025, Workbook 2 Tables A12–A16 (released 11 Jun 2026)
@@ -204,4 +237,5 @@ In section 2 I planned to read the main result at week 8. I change this to week 
 - Revolut, "Revolut Launches UK Bank", 11 Mar 2026
 - Finder, Revolut statistics (average monthly deposit, 2023)
 - Fintech press coverage of Revolut's 55-74 user data, May 2022
-
+- Pay.UK, Current Account Switch Service dashboard, Q1 2026
+- KPMG survey on bank account switching, reported January 2025
