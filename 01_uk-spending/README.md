@@ -111,9 +111,28 @@ Feature-level metrics follow in section 6.
 
 Target: +5% vs control at week 8. Reasoning: 55+ spend per account already grows about 2.5% in any eight-week period with no new feature (Q3: +33% over two years). A feature worth building should add at least that much again. Sample size is calculated in section 6.
 
+## 3. Prioritise
+Before choosing a feature, I checked what Revolut already has. Subscriptions shows a customer's recurring payments and sends an alert before each one. AIR, released in April 2026, can find and cancel a subscription. Revolut also became a licensed UK bank in March 2026, and it has been moving existing customers to bank accounts since August.
+
+After this check, I think my assumption in section 2 was wrong. I assumed 55+ customers could not find these tools. But the tools only work for payments made from a Revolut account. If a customer pays their bills from another bank, the tools have nothing to show.
+
+I think this is the case for most 55+ customers. Revolut was not a bank until this year, so deposits were not protected. Finder reports an average monthly deposit of about £480 in 2023, which is much less than a salary. In 2022 Revolut said its 55-74 customers mostly spent at post offices, cafes and supermarkets. So 55+ customers probably used Revolut for daily spending and kept their bills at their main bank. I cannot prove this with the data I have. Utilties grew 28% in Q1, so some customers already pay bills with Revolut. I list the missing data in section 7.
+
+I considered three options. The first was a new alert for recurring payments, but Subscriptions already does this. The second was a view of recurring payments for the whole household, but joint accounts already exist and it needs a lot of consent and legal work. The third was to help customers move some of their bills to Revolut when their account becomes a bank account. I chose the third and call it Bills Switch.
+
+One thing I have not tested: I assume older customers kept their bills at another bank because Revolut had no deposit protection. If the real reason is different, Bills Switch will not work. The pilot in section 5 tests this.
+
+Because the direction changed, the metric in section 2now includes Direct Debits as well as card payments.
+
+
+
+
 ## Sources
 - ONS, Revolut spending on debit cards, edition 29 Oct 2026
 - ONS, Family spending in the UK: April 2024 to March 2025, Workbook 2 Tables A12–A16 (released 11 Jun 2026)
 - Revolut, "Revolut tops 20 million retail customers on seventh anniversary", 15 Jul 2022
 - Revolut, Annual Report 2025 (UK customers 13m)
 - UK Finance, UK Payment Markets Report 2025
+- Revolut, "Revolut Launches UK Bank", 11 Mar 2026
+- Finder, Revolut statistics (average monthly deposit, 2023)
+- Fintech press coverage of Revolut's 55-74 user data, May 2022
