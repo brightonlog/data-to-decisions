@@ -20,8 +20,8 @@ ax.set_yticks(y, p.index)
 ax.set_xlabel("인기검색어 100위 안 검색어 수", fontsize=7)
 ax.tick_params(axis="y", labelsize=8, length=0)
 ax.tick_params(axis="x", labelsize=6)
-ax.set_xlim(0, 27)
+ax.set_xlim(0, 29)
 ax.margins(y=0.02)
-ax.legend(fontsize=6.5, frameon=False, loc="lower right")
-finish(fig, ax, "06_keyword_segment", "2030 여성은 손상·복구 검색어가 전체보다 8개 많고, 탈모 검색어는 8개 적음",
+ax.legend(fontsize=6.5, frameon=False, loc="center right")
+finish(fig, ax, "06_keyword_segment", "2030 여성은 손상·복구 검색어가 전체보다 8개 많고, 탈모 검색어는 10개 적음",
        source="출처: 네이버 데이터랩 쇼핑인사이트 헤어케어 인기검색어 1~100위 (전체 / 여성 20·30대, 최근 1년) · 수집 2026-11-12 · 주제는 분석자 분류")

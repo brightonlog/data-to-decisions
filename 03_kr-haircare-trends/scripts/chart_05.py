@@ -14,5 +14,5 @@ ax.tick_params(axis="y", labelsize=8, length=0)
 ax.tick_params(axis="x", labelsize=6)
 ax.set_xlim(0, df["검색어수"].max() + 3)
 ax.margins(y=0.02)
-finish(fig, ax, "05_keyword_topic", "검색어 100개 중 탈모 관련 검색어가 23개로 가장 많음",
+finish(fig, ax, "05_keyword_topic", "검색어 100개 중 탈모 관련 검색어가 25개로 가장 많음",
        source="출처: 네이버 데이터랩 쇼핑인사이트 헤어케어 인기검색어 1~100위 (전체, 최근 1년) · 수집 2026-11-12 · 주제는 분석자 분류")
